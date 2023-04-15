@@ -1,0 +1,19 @@
+/* aula01 - 01/04/2023 */
+
+body, ul {
+   margin: 0px;
+   padding:0px;
+}
+
+#menu img {
+    height: 17px; 
+    width:  7%; 
+}
+
+#menu #logo img {
+    height: 10px; 
+}
+
+
+
+
