@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css"> 
     <link rel="stylesheet" href="https://fonts.google.com/download?family=Montserrat"> 
     <title>..::* cassino *::..</title>
@@ -14,52 +14,66 @@
     <!-- aula 15/04/2023 -->
     <!-- Início Responsivo -->  
      <header id="header">
-    <a id="logo" href="index.html"><img src="./img/logo do site.jpg" alt=""></a>   
+       <a id="logo" href="index.html"><img src="./img/logo do site.jpg" alt="logo do site"></a>   
+       <nav id="nav">
+           <button aria-label="abrir menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+              <span id="hamburger"></span>
+
+           </button>
+           <ul id="menu" role="menu">
+               <li><a class="link menu" href="index.html">Home |</a></li>
+
+               <li><a class="linkmenu" href="https://www.pragmaticplay.com/br/jogos/spaceman/?gamelang=en&cur=USD">Spaceman</a></li>
+
+            </ul>
+
+        </nav>  
 
     
     </header>
 <!-- fim menu responsivo-->
 
 <!-- Carousel pagína príncipal -->
-<div id="carouselExempleInterval" class="carousel slide" data-mdb-ride="carousel">
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-        <div class="carousel-item active" data-mdb-interval="100">
+        <div class="carousel-item active" data-bs-interval="900">
           <img
            src="./img/cassino roleta.jpg"
            class="d-block w-100"
            alt="..."
            />
         </div>  
-        <div class="carousel-item active" data-mdb-interval="100">
+        <div class="carousel-item" data-bs-interval="900">
           <img
            src="./img/cassinos.jpg"
            class="d-block w-100"
            alt="..."
            />
         </div>  
-        <div class="carousel-item active" data-mdb-interval="100">
+        <div class="carousel-item" data-bs-interval="900">
           <img
            src="./img/cassino-hotel.jpg"
            class="d-block w-100"
            alt="..."
            />
-        </div>  
+        </div>
+    </div>  
         <!--Alt + Shift + Seta para baixo, copia contéudp-->
         <!-- Inicío controle carousel-->
         <button
             class="carousel-control-prev"
-            data-mdb-target="#carouselExampleInterval"
+            data-bs-target="#carouselExampleInterval"
             type="button"
-            data-mdb-slide="prev"
+            data-bs-slide="prev"
         >
-            <span class="carousel-control-prev-icon" aria hidden="true"></span>
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
         <button
-            class="carousel"-control-next
-            data-mdb-target="#carouselExampleInterval"
+            class="carousel-control-next"
+            data-bs-target="#carouselExampleInterval"
             type="button"
-            data-mdb-slide="next"
+            data-bs-slide="next"
         >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
@@ -67,14 +81,11 @@
     </div>
 </body>
 
-<script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"
+<script type="text/javascript" src="./bootstrap/js/bootstrap.min.js">
+
 
 
 
 </script>
-
-
-
-
 
 </html>
