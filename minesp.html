@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/css/dist/mdb5/standard/modules/85b79756f860ab538a160dcb796b4d4a.min.css">
     <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css"> 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"> 
@@ -21,70 +23,92 @@
 
            </button>
            <ul id="menu" role="menu">
-               <li><a class="link menu" href="index.html">Home |</a></li>
+               <li><a class="link menu" href="./index.html">Home |</a></li>
 
-               <li><a class="linkmenu" href="https://www.pragmaticplay.com/br/jogos/spaceman/?gamelang=en&cur=USD">Spaceman |</a></li>
+               <li><a class="linkmenu" href="./https://www.pragmaticplay.com/br/jogos/spaceman/?gamelang=en&cur=USD">Spaceman |</a></li>
                
-               <li><a class="link menu" href="index.html">Roleta |</a></li>
+               <li><a class="link menu" href="./index.html">Roleta |</a></li>
 
-               <li><a class="link menu" href="index.html">Mines  |</a></li>
+               <li><a class="link menu" href="./index.html">Mines  |</a></li>
 
             </ul>
 
         </nav>  
     
     </header>
-<!-- fim menu responsivo-->
+     <!-- fim menu responsivo-->
 
-<!-- Carousel pagína príncipal -->
-<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
-    <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="1500">
-          <img
-           src="./img/cassino roleta.jpg"
-           class="d-block w-100"
-           alt="..."
-           />
-        </div>  
-        <div class="carousel-item" data-bs-interval="1500">
-          <img
-           src="./img/cassinos.jpg"
-           class="d-block w-100"
-           alt="..."
-           />
-        </div>  
-        <div class="carousel-item" data-bs-interval="1500">
-          <img
-           src="./img/rolleta 2.jpg"
-           class="d-block w-100"
-           alt="..."
-           />
+     <!-- Inicio card Produtos -->
+     <section class="text-center">
+        <h4 class="mb-5"><strong>Conheça nossos Produtos</strong> </h4>
+        <div class="row">
+            <div class="col-lg-4 col-md-12 md4">
+                <div class="card">
+                    <div class="bd-image hover-overplay ripple" data-mdb-ripple-color="ligth">
+                        <img src="./img/PD.2.webp" class="img-fluid">
+                        <a href="#">
+                            <div class="mask" style="background-color: rgba(251, 251, 251, 0, 15);"></div>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Produto</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam quibusdam doloribus sequi sint id sed cum? Fuga non ullam debitis aut, quidem molestias vitae, enim ad, corrupti quia voluptate tempore?
+                        </p>
+                        <a href="#" class="btn btn-primary">Button</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 md4">
+                <div class="card">
+                    <div class="bd-image hover-overplay ripple" data-mdb-ripple-color="ligth">
+                        <img src="./img/PD3.jpg" class="img-fluid">
+                        <a href="#">
+                            <div class="mask" style="background-color: rgba(251, 251, 251, 0, 15);"></div>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Produto</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam quibusdam doloribus sequi sint id sed cum? Fuga non ullam debitis aut, quidem molestias vitae, enim ad, corrupti quia voluptate tempore?
+                        </p>
+                        <a href="#" class="btn btn-primary">Button</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 md4">
+                <div class="card">
+                    <div class="bd-image hover-overplay ripple" data-mdb-ripple-color="ligth">
+                        <img src="./img/PD4.jpg" class="img-fluid">
+                        <a href="#">
+                            <div class="mask" style="background-color: rgba(251, 251, 251, 0, 15);"></div>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Produto</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam quibusdam doloribus sequi sint id sed cum? Fuga non ullam debitis aut, quidem molestias vitae, enim ad, corrupti quia voluptate tempore?
+                        </p>
+                        <a href="#" class="btn btn-primary">Button</a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>  
-        <!--Alt + Shift + Seta para baixo, copia contéudp-->
-        <!--Alt + Shift >> Selecionando diversas e alterando o mesmo valor de forma simultanea -->
-        <!-- Inicío controle carousel-->
-        <button
-            class="carousel-control-prev"
-            data-bs-target="#carouselExampleInterval"
-            type="button"
-            data-bs-slide="prev"
-        >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-            class="carousel-control-next"
-            data-bs-target="#carouselExampleInterval"
-            type="button"
-            data-bs-slide="next"
-        >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-    <!-- Fim controle carousel -->
-    <!-- Fim carousel pagina principal -->
+    </section>
+
+    <!-- Fim card -->
+     <!-- Inicio gallery Produtos -->
+     <div class="row">
+        <div class="col-lg-4 col-mb-12 mb-lg-0">
+            <img src="./img/cartas.jpg" class="w-100 shadow-1-strong rounded mb-4"  alt="Produto 1">
+            <img src="./img/cartas.jpg" class="w-100 shadow-1-strong rounded mb-4"  alt="Produto 2">
+        <div class="col-lg-4 col-mb-4 mb-lg-0">
+            <img src="./img/cartas.jpg" class="w-100 shadow-1-strong rounded mb-4"  alt="Produto 1">
+            <img src="./img/cartas.jpg" class="w-100 shadow-1-strong rounded mb-4"  alt="Produto 2">
+        <div class="col-lg-4 col-mb-4 mb-lg-0">
+            <img src="./img/cartas.jpg" class="w-100 shadow-1-strong rounded mb-4"  alt="Produto 1">
+            <img src="./img/cartas.jpg" class="w-100 shadow-1-strong rounded mb-4"  alt="Produto 2">
+        </div>
+     </div>
+
+<!-- Fim gallery Produtos -->
     <!-- Inicio banner -->
     <div class="selection-banner-home">
         <div class="container-fluid">
@@ -101,12 +125,13 @@
                     <section class="texto-banner d-none d-none d-md-block">
                      <h1>Faça Dinheiro de Forma Divertida e Rapida</h1>
                      <p class="d-none d-md-block">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias voluptatibus alias natus eaque deleniti. Asperiores, a est.  Veniam, laborum velit doloremque eos illo dignissimos, nobis hic ad facilis aperiam consequatur</p>
-                     <a href="produtos.html"> Saiba Mais</a>
+                     <a href="./produtos.html"> Saiba Mais</a>
                     </section>
                 </div>
             <div>
         </div>
     </div>
+    
     <!-- Fim banner -->
     <!-- Inicio Destaque -->
     <div class="Destaque">
@@ -121,7 +146,7 @@
                 <!-- Inicio imagem 1 -->
                 <div class="col-6 col-md-2 pr-0">
                     <figure>
-                        <a href="produtos.html"><img src="./img/Spaceman4.jpg" alt="figura-destaque" width="100%"></a>
+                        <a href="./produtos.html"><img src="./img/Spaceman4.jpg" alt="figura-destaque" width="100%"></a>
                         <figcaption>spaceman<br>
                         </figure>
                     </div>
@@ -129,7 +154,7 @@
                 <!-- Inicio imagem 2 -->
                 <div class="col-6 col-md-2 pr-0">
                     <figure>
-                        <a href="produtos.html"><img src="./img/roleta.jpg" alt="figura-destaque" width="100%"></a>
+                        <a href="./produtos.html"><img src="./img/roleta.jpg" alt="figura-destaque" width="100%"></a>
                         <figcaption>roleta<br>
                         </figure>
                     </div>
@@ -137,7 +162,7 @@
                 <!-- Inicio imagem 3 -->
                 <div class="col-6 col-md-2 pr-0">
                     <figure>
-                        <a href="produtos.html"><img src="./img/Mines2.jpg" alt="figura-destaque" width="100%"></a>
+                        <a href="./produtos.html"><img src="./img/Mines2.jpg" alt="figura-destaque" width="100%"></a>
                         <figcaption>Mines<br>
                         </figure>
                     </div>
@@ -232,6 +257,17 @@
     </div>
 </div>
     <!--Fim da Galeria -->
+
+<!-- Inicio whatsapp -->
+<div class="whatsapp">
+    <div class="container-grid logo-whats">
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=5515998389761&text=queria%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20site%20"><img src="./img/whats.png" class="quica" alt="Contato Whatsapp"></a>
+    </div>
+
+</div>
+
+<!-- Fim whatsapp -->
+    
     <!-- Inicio footer -->
     <footer class="rodape">
         <div class="container">

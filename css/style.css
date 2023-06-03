@@ -13,11 +13,12 @@ a {
     text-transform: uppercase;
     font-size: 1.25em;
     transition: 0.3s;
+    margin-right: 15px;
 
 }
 #header #menu a:hover {
     color: rgb(12, 92, 4);
-    font-size: 1.30em;
+    font-size: 1.25em;
     transition: 0.3s;
     text-shadow: 4px 4px 6px #0000007a;
 
@@ -71,7 +72,7 @@ a:hover {
     height: auto
 }
 #carouselExampleInterval .carousel-inner img {
-    max-height: 750px;
+    max-height: 550px;
     width: 100;
 }
 @media (max-width: 600px) {
@@ -145,13 +146,15 @@ a:hover {
     background-color:  #005caa;
 }
 .section-banner-home img {
-    height: 600px;
+    max-height: 400px;
+    width: 70%;
+    display: block;
+    margin: auto;
 }
 .section-banner-home .texto-banner{
     margin-top: 30px;
     font-size: 22px;
 }
-
 .section-banner-home .texto-banner h1 {
     font-size:30px;
     width: 60%;
@@ -252,7 +255,7 @@ font-weight: bold;
     margin: 14px auto 50px;
 }
 /* Fim CSS Galeiras */
-/*  Inicio CSS Footer */
+/* Início CSS Footer */
 
 .rodape {
     padding: 50px 50px 0;
@@ -266,7 +269,7 @@ font-weight: bold;
 }
 .rodape .container #logo-rodape img:hover {
     transform: scale(1.5);
-    box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 .rodape .info-contato p {
     margin: 0px;
@@ -279,26 +282,26 @@ font-weight: bold;
 .rodape a:hover {
     font-weight: bold;
 }
-.rodape redes-sociais {
+.rodape .redes-sociais {
     display: inline-block;
 }
-.rodape .redes-sociais img{
+.rodape .redes-sociais img {
     width: 45px;
-    height: 40px; 
-    border-radius: 100px; /* Arredondando div do objeto redes sociais */
-    margin-left: 1rem;
+    height: 40px;
     padding-left: 0;
+    margin-left: 0.5rem;
     transition: transform .3s;
-    display: block;
+    border-radius: 120px; /* Arredondando div do obejto redes sociais */
 }
 .rodape .redes-sociais img:hover {
     transform: scale(1.5);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.452);    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.446);
 }
-.rodape p.diretios {
+.rodape p.direitos {
     text-align: center;
     margin-top: 40px;
 }
+/* Fim CSS Footer */
 /* Inicio CSS Streaming */
 
 .embed-container {
@@ -450,45 +453,68 @@ font-weight: bold;
     position: fixed;
     z-index: 2;
     /*top: 200px; */
-    right: 40px;
-    bottom: 100px;
+    right: 20px;
+    bottom: 80px;
 }
 .whatsapp img {
     height: 60px;
 }
-/* Inicio pulse */
-
-.pulse-whats {
-    animation: pulse 0.7s infinite;
-    margin: 0 auto;
-    display: table;
-    margin-top: 50px;
-    animation-direction: alternate;
-    -webkit-animation-name: pulse;
-    animation-name: pulse;
-}
-@-webkit-keyframes pulse { 
-    0%{
-        -webkit-transform: scale(1);
-        -webkit-filter: brightness (100%);
-    } 
-    
-     100% {
-        -webkit-transform: scale(1.1);
-        -webkit-filter: brightness(200%);
-    }
+.whatsapp .quica {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    animation: quica .7s cubic-bezier(.53, -0.03, .67, 1.06);
+    animation-direction:alternate;
+    animation-iteration-count:infinite ;
 }
 
-@keyframes pulse {
+@keyframes quica {
     0% {
-        transform: scale(1);
-        filter: brightness(100%);
+        transform: translateY(0px);
     }
     100% {
-        transform: scale(1.1);
-        filter: brightness(200%);
+        transform: translateY(100%);
+        width: 70px;
+        height: 40px;
     }
 }
+
+/* Fim CSS whats */
+
+/* Inicio CSS Card produto */
+
+.text-center .mb-5 {
+    margin-top: 20px;
+}
+
+.card img {
+    max-height: 300px;
+    width: 100%;
+}
+
+.mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-attachment:fixed ;
+}
+.overlay .mask {
+    opacity: 0;
+    transition: all .4s ease-in-out;
+
+}
+
+.overlay mask:hover {
+    opacity: 1;
+}
+/* Inicio CSS Card produto */
+
+
 
 
 
